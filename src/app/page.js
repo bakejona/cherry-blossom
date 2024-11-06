@@ -1,9 +1,7 @@
-import styles from "./page.module.css";
+'use client';
+
+import React from 'react';
 
 export default function Home() {
-  return (
-    <main>
-      <h1>Hi 😊 </h1>
-    </main>
-  );
+  return <div>Test Page</div>;
 }
