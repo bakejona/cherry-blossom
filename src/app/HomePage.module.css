@@ -1,0 +1,124 @@
+.hero {
+    position: relative;
+    height: 70vh; 
+    background: url(../images/hero.gif) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(116, 95, 122, 0.5); 
+    z-index: 1; 
+  }
+  
+  .heroText {
+    position: relative; 
+    z-index: 2; 
+  }
+  
+  .heroText h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .heroText p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .ctaButton {
+    background-color: #e6a7c9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .ctaButton:hover {
+    background-color: #5f226e;
+  }
+
+  .about {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    background-color: #e6a7c9;
+  }
+  
+  .about h2 {
+    font-size: 2.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .cta {
+    background-color: #ffdde1;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e6a7c9;
+  }
+  
+  .cta h2 {
+    font-size: 2.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .ctaButton {
+    background-color: #9c5aab;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #ddbcf7;
+  }
+  
+ 
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 1em;
+    background-color: rgb(220, 186, 245); 
+  }

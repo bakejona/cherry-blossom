@@ -1,0 +1,153 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #f8c8dc, #ffdde1); /* Soft pink gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Cherry Blossom Background Animation */
+  .navbar::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background-image: url('https://www.transparenttextures.com/patterns/snow-flake.png');
+    opacity: 0.3;
+    animation: floatBlossoms 12s infinite ease-in-out;
+  }
+  
+  /* Keyframe animation for floating blossoms */
+  @keyframes floatBlossoms {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    50% {
+      transform: translateY(-10px) rotate(15deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+  
+  /* Navigation Links Styling */
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navLinks li {
+    position: relative;
+  }
+  
+  .navLinks a {
+    color: #8b4e6f;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  /* Hover Effect with Cherry Blossom Animation */
+  .navLinks a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #ff6f91; /* Cherry blossom pink */
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .navLinks a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  /* Petal animation for link hover */
+  .navLinks a:hover {
+    animation: petalFall 2s ease-in-out infinite;
+  }
+  
+  /* Petal animation effect (only for links) */
+  @keyframes petalFall {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(30px) rotate(10deg);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(60px) rotate(20deg);
+      opacity: 0;
+    }
+  }
+  
+
+  .logo {
+    font-size: 2em;
+    color: #8b4e6f; 
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    animation: floatLogo 6s ease-in-out infinite, bloomLogo 3s ease-out infinite;
+    transform-origin: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+
+  @keyframes floatLogo {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .navLinks a::before {
+    content: '🌸'; 
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    opacity: 0;
+    animation: fallPetal 3s ease-in-out infinite;
+  }
+  
+
+  @keyframes fallPetal {
+    0% {
+      top: -30px;
+      opacity: 1;
+      transform: translateX(-50%) rotate(0deg);
+    }
+    50% {
+      top: 40px;
+      opacity: 0.5;
+      transform: translateX(-50%) rotate(45deg);
+    }
+    100% {
+      top: 90px;
+      opacity: 0;
+      transform: translateX(-50%) rotate(90deg);
+    }
+  }
