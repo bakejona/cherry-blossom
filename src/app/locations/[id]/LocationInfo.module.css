@@ -1,0 +1,71 @@
+.locationPage {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Wrapper for both the image and content */
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* To prevent image from spilling out */
+  }
+  
+  /* Image inside the wrapper */
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover; /* Ensures the image fully covers the container */
+  }
+  
+  /* Wrapper for the text content */
+  .infoWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+    border-radius: 15px;
+    width: 80%;
+  }
+  
+  /* Location name styling */
+  .locationName {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: #ff6f91;  /* Cherry blossom pink */
+  }
+  
+  /* Location description styling */
+  .locationDescription {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 600px) {
+    .locationPage {
+      padding: 15px;
+    }
+  
+    .locationName {
+      font-size: 2em;
+    }
+  
+    .locationDescription {
+      font-size: 1em;
+    }
+  }
