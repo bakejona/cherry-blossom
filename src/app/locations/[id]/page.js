@@ -5,7 +5,7 @@ const locationData = [
     id: "1",
     name: "Kyoto, Japan",
     description: "Famous for its cherry blossoms in spring.",
-    image: "/kyoto.jpg", // Image path (from public folder)
+    image: "/kyoto.jpg",
   },
   {
     id: "2",
@@ -21,7 +21,6 @@ const locationData = [
   },
 ];
 
-// Location detail page component
 export default function LocationInfo({ params }) {
   const { id } = params;
   const location = locationData.find((loc) => loc.id === id);

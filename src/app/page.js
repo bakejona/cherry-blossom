@@ -28,7 +28,6 @@ export default function HomePage() {
             Sign up for our newsletter and receive updates on the latest cherry
             blossom events, news, and inspiration.
           </p>
-          <button className={styles.ctaButton}>Sign Up</button>
         </section>
 
         <footer className={styles.footer}>

@@ -24,12 +24,35 @@ const initialLocations = [
 ];
 
 export default function Locations() {
+  const [formData, setFormData] = useState({
+    name: "",
+    description: "",
+    image: "",
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // You can add logic here to handle the new location submission,
+    // such as sending it to a server or updating the state.
+    console.log("New Location Submitted:", formData);
+    // Reset form after submission
+    setFormData({ name: "", description: "", image: "" });
+  };
+
   return (
     <div className={styles.locationsPage}>
       <h1 className={styles.title}>Cherry Blossom Locations</h1>
 
       <div className={styles.locationsList}>
-        {locations.map((location) => (
+        {initialLocations.map((location) => (
           <div
             key={location.id}
             className={styles.locationCard}
@@ -82,6 +105,9 @@ export default function Locations() {
             required
           />
         </div>
+        <button type="submit" className={styles.submitButton}>
+          Add Location
+        </button>
       </form>
     </div>
   );

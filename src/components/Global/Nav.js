@@ -21,6 +21,11 @@ export default function Nav() {
             Events
           </Link>
         </li>
+        <li>
+          <Link href="/gallery" className={styles.navItem}>
+            Gallery
+          </Link>
+        </li>
       </ul>
 
       <div className={styles.logo}>🌸 Cherry Blossom</div>
