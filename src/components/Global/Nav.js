@@ -16,6 +16,11 @@ export default function Nav() {
             Locations
           </Link>
         </li>
+        <li>
+          <Link href="/events" className={styles.navItem}>
+            Events
+          </Link>
+        </li>
       </ul>
 
       <div className={styles.logo}>🌸 Cherry Blossom</div>
