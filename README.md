@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cherry Blossom Project
 
-## Getting Started
+## Project Members
 
-First, run the development server:
+Megan Palmquist & Johnathon Baker
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Our project contains a collection of pages dedicated to the beauty of cherry blossoms 🌸. Users can explore various locations known for their cherry blossoms, learn about upcoming events, and contribute by adding new locations.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Megan's Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Home Page**: An introduction to the project and its theme.
+- **Locations Page**: A list of cherry blossom locations with detailed descriptions.
+- **Events Page**: Information about upcoming cherry blossom events.
 
-## Learn More
+### Nested Routes
 
-To learn more about Next.js, take a look at the following resources:
+This project utilizes nested routes to organize related content efficiently. Here’s a breakdown of the nested routes and their descriptions:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Home Page (`/`)**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   - The landing page that welcomes users to the Cherry Blossom Garden. It provides an overview of the project and invites users to explore more.
 
-## Deploy on Vercel
+2. **Locations Page (`/locations`)**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   - This page displays a list of cherry blossom locations. Each location card provides a brief description and an image. Users can click on "More Info" to navigate to a detailed view of each location.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. **Location Detail Page (`/locations/[id]`)**
+
+   - This is a dynamic route where `[id]` corresponds to the specific location. Each location has a detailed description, an image, and additional information about what makes it special. If a user tries to access a location that doesn't exist, a "Location Not Found" message will be displayed.
+
+4. **Events Page (`/events`)**
+   - This page lists all upcoming events related to cherry blossoms. Each event card includes the event name, date, description, and a link to the event's website for more details.
+
+### Adding a New Location
+
+Users can add new cherry blossom locations through the form available on the Locations page. The form collects the location name, description, and image URL. Upon submission, the new location data is logged to the console, and the form resets for further entries.
+
+### Technologies Used
+
+- **React**: For building the user interface.
+- **Next.js**: For server-side rendering and routing.
+- **CSS Modules**: For styling components.
