@@ -1,5 +1,6 @@
 "use client";
 import styles from "./HomePage.module.css";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -9,7 +10,9 @@ export default function HomePage() {
           <div className={styles.heroText}>
             <h1>Welcome to the Cherry Blossom Garden</h1>
             <p>Experience the beauty of nature, one petal at a time.</p>
-            <button className={styles.ctaButton}>Explore More</button>
+            <Link href="/festival">
+              <button className={styles.ctaButton}>Explore More</button>
+            </Link>
           </div>
         </section>
 

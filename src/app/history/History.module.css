@@ -1,0 +1,90 @@
+.historyPage {
+    padding: 2rem;
+    background-color: #f0f4f8;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 5px solid #ff6f91;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.8);
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #ff6f91;
+    margin: 1.5rem 0;
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #e63946;
+}
+
+.historyPage h2 {
+    font-size: 2rem;
+    color: #3e2a47;
+    margin-top: 1.5rem;
+    border-bottom: 2px solid #ff6f91;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.historyPage h2:hover {
+    border-color: #e63946;
+}
+
+.historyPage p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: color 0.3s ease;
+}
+
+.historyPage p:hover {
+    color: #ff6f91;
+}
+
+.section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem 0;
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .historyPage h2 {
+        font-size: 1.5rem;
+    }
+
+    .historyPage p {
+        font-size: 1rem;
+    }
+}
