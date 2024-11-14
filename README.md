@@ -2,7 +2,7 @@
 
 ## Project Members
 
-Megan Palmquist & Johnathon Baker
+Megan Palmquist & Jonathan Baker
 
 ### Overview
 
@@ -13,6 +13,12 @@ Our project contains a collection of pages dedicated to the beauty of cherry blo
 - **Home Page**: An introduction to the project and its theme.
 - **Locations Page**: A list of cherry blossom locations with detailed descriptions.
 - **Events Page**: Information about upcoming cherry blossom events.
+
+### Jonathan's Features
+
+- **History Page**: A history of cherry blossoms and their origins, cultural significance, festivals, and conservation efforts.
+- **FAQ Page**: A list of cherry blossom related questions with an option to add a question through the contact page.
+- **Contact Page**: A form for users to type in information and submit a message.
 
 ### Nested Routes
 
@@ -32,6 +38,15 @@ This project utilizes nested routes to organize related content efficiently. Her
 
 4. **Events Page (`/events`)**
    - This page lists all upcoming events related to cherry blossoms. Each event card includes the event name, date, description, and a link to the event's website for more details.
+  
+5. **History Page (`/history`)**
+   - This page explains cherry blossom history and information related to the websites locations and events pages.
+
+6. **FAQ Page (`/faq`)**
+   - This page lists common questions related to cherry blossom festivals, events, locations, and the species itself. The page also includes a nested route that takes the user directly to the contact page to ask any unanswered questions.
+
+7. **Contact Page (`/contact`)**
+   - This page allows users to contact within the website. Users can provide information such as a first and last name, email, and messages into a text input. The form will automatically reset once the submit button is pressed in case a user has multiple messages.
 
 ### Adding a New Location
 
