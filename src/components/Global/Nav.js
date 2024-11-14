@@ -32,6 +32,11 @@ export default function Nav() {
          </Link>
         </li>
         <li>
+          <Link href="/faq" className={styles.navItem}>
+            FAQ
+         </Link>
+        </li>
+        <li>
           <Link href="/contact" className={styles.navItem}>
             Contact
          </Link>

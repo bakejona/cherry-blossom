@@ -1,0 +1,72 @@
+/* src/app/faq/FAQ.module.css */
+
+.faqPage {
+    padding: 2rem;
+    background-color: #f0f4f8;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #ff6f91;
+    margin-bottom: 1.5rem;
+  }
+  
+  .faqContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .faqItem {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .question {
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    margin-top: 0.5rem;
+    color: #555;
+  }
+  
+  .faqItem:hover .answer {
+    max-height: 100px; 
+    opacity: 1;
+  }
+  
+  .contactMessage {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .contactButton {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactButton:hover {
+    background-color: #3e2a47;
+  }
