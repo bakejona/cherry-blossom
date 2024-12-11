@@ -59,7 +59,7 @@ export default function EventsPage() {
         Join us in celebrating the beauty of cherry blossoms! These events are a
         perfect opportunity to enjoy the stunning floral displays, participate
         in cultural activities, and create lasting memories with friends and
-        family. Don't miss out on the magic of spring!
+        family. Dont miss out on the magic of spring!
       </p>
     </div>
   );

@@ -83,7 +83,7 @@ export default function FAQPage() {
       </div>
 
       <div className={styles.contactMessage}>
-        <p>Can't find the answer you're looking for?</p>
+        <p>Cant find the answer youre looking for?</p>
         <Link href="/contact">
           <button className={styles.contactButton}>Contact Us</button>
         </Link>
